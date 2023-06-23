@@ -40,17 +40,25 @@
       text-decoration: underline;
     }
   </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var currentDate = new Date();
+      var formattedDate = currentDate.toLocaleDateString('pt-BR');
+      document.getElementById("data-vigencia").textContent = formattedDate;
+    });
+  </script>
 </head>
 
 <body>
   <div class="container">
     <img src="icon.png">
     
-    <h1>Política de Privacidade do [Nome do seu App]</h1>
+    <h1>Política de Privacidade do Aplicativo NN Lanches</h1>
 
-    <p>Data de vigência: [data de vigência da política de privacidade]</p>
+    <p>Data de vigência: <span id="data-vigencia"></span></p>
 
-    <p>Agradecemos por usar o [Nome do seu App]. Esta política de privacidade descreve como coletamos, usamos,
+    <p>Agradecemos por usar o Aplicativo da NN Lanches. Esta política de privacidade descreve como coletamos, usamos,
       armazenamos e divulgamos informações pessoais quando você utiliza nosso aplicativo. Leia atentamente esta
       política para entender como tratamos seus dados pessoais.</p>
 
@@ -60,8 +68,13 @@
     <p>Quando você utiliza nosso aplicativo, podemos coletar as seguintes informações pessoais que você nos fornece
       voluntariamente:</p>
     <ul>
-      <li>[Exemplos de informações que podem ser coletadas, como nome, endereço de e-mail, número de telefone, etc.]
-      </li>
+      <li>Nome ou Apelido</li>
+      <li>Endereço (Rua, Logradouro)</li>
+      <li>Referência (Localização do domicílio)</li>
+      <li>E-mail</li>
+      <li>Número de telefone</li>
+      <li>Dados bancários</li>
+      <li>Dados de cartão de crédito</li>
     </ul>
 
     <h3>1.2 Informações coletadas automaticamente</h3>
@@ -70,6 +83,10 @@
     <ul>
       <li>[Exemplos de informações coletadas automaticamente, como endereço IP, tipo de dispositivo, sistema operacional,
         localização aproximada, etc.]</li>
+      <li>Endereço IP</li>
+      <li>Tipo de dispositivo</li>
+      <li>Sistema Operacional</li>
+      <li>Localização aproximada</li>
     </ul>
 
     <h2>2. Uso das informações</h2>
@@ -112,7 +129,7 @@
 
     <h2>8. Contato</h2>
     <p>Se tiver dúvidas sobre esta política de privacidade ou sobre as práticas de coleta e uso de informações do nosso
-      aplicativo, entre em contato conosco através de <a href="mailto:seuemail@provedor.com">seuemail@provedor.com</a>.
+      aplicativo, entre em contato conosco através de <a href="mailto:marcosferreira.developer@gmail.com">marcosferreira.developer@gmail.com</a>.
     </p>
   </div>
 </body>
